@@ -214,4 +214,240 @@
   word-break: normal;
 }
 
+/* =========================================
+   MOBILE
+   ========================================= */
 
+@media (max-width: 768px) {
+
+  .footer-contact-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-contact-main {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .footer-contact-quote {
+    width: 100%;
+    margin: 0;
+  }
+
+}
+
+.footer-contact-list {
+  margin: 0 0 18px;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.footer-contact-list__icon {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background: rgba(212, 175, 55, 0.12);
+  color: var(--gov-gold);
+  font-size: 13px;
+}
+
+.footer-contact-list a {
+  color: var(--gov-text-light);
+  font-size: 13.5px;
+  text-decoration: none !important;
+  transition: color 0.2s ease;
+}
+
+.footer-contact-list a:hover {
+  color: var(--gov-gold);
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social a {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 50%;
+  color: var(--gov-text-light);
+  font-size: 14px;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.footer-social a:hover {
+  transform: translateY(-3px);
+  background: var(--gov-gold);
+  border-color: var(--gov-gold);
+  color: var(--gov-navy-dark);
+}
+
+/* ---- Brand tengah ---- */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 0px;
+}
+
+.footer-brand__logo {
+  display: block;
+  width: 56px;
+  height: auto;
+  margin: 0 auto 12px;
+  filter: drop-shadow(0 8px 18px rgba(212, 175, 55, 0.25));
+}
+
+.footer-brand__title {
+  margin: 0 0 4px;
+  color: #ffffff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.footer-brand__subtitle {
+  margin: 0 0 16px;
+  color: var(--gov-text-light);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.footer-brand-button a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 22px;
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  border-radius: 999px;
+  color: var(--gov-gold);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.footer-brand-button a i {
+  font-size: 11px;
+  transition: transform 0.25s ease;
+}
+
+.footer-brand-button a:hover {
+  background: var(--gov-gold);
+  color: var(--gov-navy-dark) !important;
+  transform: translateY(-2px);
+}
+.pamong-footer__bottom 
+.footer-brand-button a:hover i {
+  transform: translateX(3px);
+}
+
+/* ---- Menu navigasi/layanan ---- */
+.footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-menu li {
+  margin-bottom: 9px;
+}
+
+.footer-menu a {
+  color: var(--gov-text-light);
+  font-size: 13.5px;
+  text-decoration: none !important;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.footer-menu a:hover {
+  color: var(--gov-gold);
+  padding-left: 4px;
+}
+
+/* ---- Bagian bawah / copyright ---- */
+.pamong-footer__bottom {
+  padding: 16px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.pamong-footer__bottom p {
+  margin: 0;
+  color: #8394a3;
+  font-size: 12.5px;
+}
+
+.pamong-footer__bottom p span {
+  color: var(--gov-text-light);
+  font-weight: 600;
+}
+
+.pamong-footer__credit {
+  margin-top: 4px !important;
+  font-size: 11.5px !important;
+  opacity: 0.7;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 991px) {
+  .footer-brand {
+    margin: 40px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .pamong-footer {
+    padding-top: 56px;
+  }
+
+  .footer-box,
+  .footer-brand {
+    text-align: center;
+  }
+
+  .footer-contact-layout {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-contact-quote {
+    flex: 1 1 auto;
+    width: 100%;
+    border-left: 0;
+    border-top: 3px solid var(--gov-gold);
+  }
+
+  .footer-box h3 {
+    margin-top: 30px;
+  }
+
+  .footer-contact-list li {
+    justify-content: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
