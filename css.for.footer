@@ -1,1 +1,109 @@
+/*--------------------------------------------------------------
+# Counter Two — Redesign
+--------------------------------------------------------------*/
+.counter-two {
+  position: relative;
+  display: block;
+  background-color:white;
+  padding: 20px 0;
+  z-index: 1;
+}
+
+.counter-two__inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 991px) {
+  .counter-two__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .counter-two__inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+.counter-two__single {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background-color: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(var(--pitoon-black-rgb), 0.1);
+  border-radius: 10px;
+  margin-bottom: 0;
+  transition: transform 300ms ease, background-color 300ms ease;
+}
+
+.counter-two__single:hover {
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.55);
+}
+
+.counter-two__single::before {
+  display: none;
+}
+
+.counter-two__icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background-color: rgba(var(--pitoon-black-rgb), 0.08);
+  top: 0;
+  flex-shrink: 0;
+}
+
+.counter-two__icon i {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  color: var(--pitoon-black);
+  transition: transform 400ms ease;
+}
+
+.counter-two__single:hover .counter-two__icon i {
+  transform: scale(1.1);
+}
+
+.counter-two__content {
+  position: relative;
+  display: block;
+  margin-right: 0;
+}
+
+.counter-two__content h3 {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.1 !important;
+  font-family: var(--pitoon-font) !important;
+  color: var(--pitoon-black);
+  margin-bottom: 1px;
+}
+
+.counter-two__text {
+  font-size: 9.5px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--pitoon-black);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+
+
 
