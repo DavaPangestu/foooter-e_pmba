@@ -1,0 +1,153 @@
+<!--Counter Two Start-->
+<section class="counter-two">
+    <div class="container">
+        <ul class="counter-two__inner list-unstyled">
+            <li class="counter-two__single">
+                <div class="counter-two__icon">
+                    <i class="icon-checking"></i>
+                </div>
+                <div class="counter-two__content">
+                    <h3 class="odometer" data-count="886">00</h3>
+                    <p class="counter-two__text">Pamong Budaya Terdaftar</p>
+                </div>
+            </li>
+            <li class="counter-two__single">
+                <div class="counter-two__icon">
+                    <i class="icon-recommend"></i>
+                </div>
+                <div class="counter-two__content">
+                    <h3 class="odometer" data-count="601">00</h3>
+                    <p class="counter-two__text">Sertifikasi Diterbitkan</p>
+                </div>
+            </li>
+            <li class="counter-two__single">
+                <div class="counter-two__icon">
+                    <i class="icon-increment"></i>
+                </div>
+                <div class="counter-two__content">
+                    <h3 class="odometer" data-count="960">00</h3>
+                    <p class="counter-two__text">Cagar Budaya Terdata</p>
+                </div>
+            </li>
+            <li class="counter-two__single">
+                <div class="counter-two__icon">
+                    <i class="icon-consulting"></i>
+                </div>
+                <div class="counter-two__content">
+                    <h3 class="odometer" data-count="240">00</h3>
+                    <p class="counter-two__text">Jumlah Karyawan</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!--Counter Two End-->
+
+<footer class="site-footer pamong-footer">
+
+    <div class="site-footer__bg" style="background-image:url('/static/images/backgrounds/site-footer-bg.png')"></div>
+
+    <div class="container">
+
+        <div class="row pamong-footer__content align-items-start">
+            
+
+            <!-- KONTAK -->
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="footer-box">
+                    <h3>Kontak</h3>
+
+                    <div class="footer-contact-layout">
+                        <div class="footer-contact-main">
+                            <p class="footer-box__desc">
+                                Dinas Kebudayaan Pamong Budaya Indonesia
+                            </p>
+
+                            <ul class="footer-contact-list">
+                                <li>
+                                    <span class="footer-contact-list__icon"><i class="fas fa-envelope"></i></span>
+                                    <a href="mailto:info@pamongbudaya.id">info@pamongbudaya.id</a>
+                                </li>
+                                <li>
+                                    <span class="footer-contact-list__icon"><i class="fas fa-phone"></i></span>
+                                    <a href="tel:+620000000000">+62 000 0000 000</a>
+                                </li>
+                            </ul>
+
+                            <div class="footer-social">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="footer-contact-quote">
+                            <span>Merawat Warisan, Menghidupkan Kebudayaan.</span>
+                            Menjaga, mengembangkan, dan memperkenalkan kekayaan budaya Indonesia.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BRAND TENGAH -->
+            <div class="col-xl-4 col-lg-4 col-md-12">
+                <div class="footer-brand">
+                    <img class="footer-brand__logo" src="/static/images/govtheme/logo.png" alt="Logo Pamong Budaya">
+
+                    <h3 class="footer-brand__title">Pamong Budaya</h3>
+
+                    <p class="footer-brand__subtitle">
+                        Jabatan Fungsional
+                        <br>
+                        Pamong Budaya
+                    </p>
+
+                    <div class="footer-brand-button">
+                        <a href="{% url 'projects' %}">
+                            Jelajah Budaya
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NAVIGASI + LAYANAN -->
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="footer-box footer-links">
+                    <div class="row">
+
+                        <div class="col-6">
+                            <h3>Navigasi</h3>
+                            <ul class="footer-menu">
+                                <li><a href="{% url 'index' %}">Beranda</a></li>
+                                <li><a href="{% url 'about' %}">Profil</a></li>
+                                <li><a href="{% url 'blog' %}">Berita</a></li>
+                                <li><a href="{% url 'contact' %}">Kontak</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6">
+                            <h3>Layanan</h3>
+                            <ul class="footer-menu">
+                                <li><a href="#">Data Budaya</a></li>
+                                <li><a href="#">Agenda</a></li>
+                                <li><a href="#">Publikasi</a></li>
+                                <li><a href="#">Galeri</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="pamong-footer__bottom">
+            <p>© 2026 <span>Portal Pamong Budaya</span>. All Rights Reserved.</p>
+            <p class="pamong-footer__credit">Dikelola oleh Dinas Kebudayaan Republik Indonesia</p>
+        </div>
+
+    </div>
+
+</footer>
